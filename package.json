@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:mock": "cross-env PET_MOCK=mock npm run dev",
+    "dev:mock": "cross-env PET_MOCK=mock parcel src/index.html",
     "dev": "parcel src/index.html",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "format": "prettier --write \"src/**/*.{js,jsx,html}\"",
@@ -31,14 +31,6 @@
     "react-dom": "^16.13.1"
   },
   "browserslist": [
-    "last 2 Chrome versions",
-    "last 2 ChromeAndroid versions",
-    "last 2 Firefox versions",
-    "last 2 FirefoxAndroid versions",
-    "last 2 Safari versions",
-    "last 2 iOS versions",
-    "last 2 Edge versions",
-    "last 2 Opera versions",
-    "last 2 OperaMobile versions"
+    "last 2 Chrome versions"
   ]
 }
