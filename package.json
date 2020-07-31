@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "react-scripts build",
     "dev:mock": "cross-env PET_MOCK=mock parcel src/index.html",
     "dev": "parcel src/index.html",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
