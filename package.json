@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "the Complete Intro to React, v5",
   "main": "src/App.js",
+  "homepage": "/adopt-me",
   "dependencies": {
     "@frontendmasters/pet": "^1.0.3",
     "@reach/router": "^1.2.1",
