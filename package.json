@@ -28,7 +28,7 @@
     "prettier": "^1.16.1"
   },
   "scripts": {
-    "build": "parcel build src/index.html --public-url /adopt-me/",
+    "build": "cross-env NODE_ENV=production parcel build src/index.html --public-url /adopt-me/",
     "clear-build-cache": "rm -rf .cache/ dist/",
     "dev": "parcel src/index.html",
     "dev:mock": "cross-env PET_MOCK=mock parcel src/index.html",
