@@ -20,10 +20,10 @@ class Details extends React.Component {
           media: animal.photos,
           breed: animal.breeds.primary,
           url: animal.url,
-          loading: false,
+          loading: false
         });
       })
-      .catch((err) => this.setState({ error: err }));
+      .catch(err => this.setState({ error: err }));
   }
   toggleModal = () => this.setState({ showModal: !this.state.showModal });
   adopt = () => navigate(this.state.url);
@@ -39,7 +39,7 @@ class Details extends React.Component {
       description,
       media,
       name,
-      showModal,
+      showModal
     } = this.state;
 
     return (
