@@ -28,7 +28,8 @@
     "prettier": "^1.16.1"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production parcel build src/index.html --public-url /adopt-me/",
+    "deploy": "npm run build && git add . && git commit -a -m 'latest build' && git push origin master",
+    "build": "cross-env NODE_ENV=production parcel build src/index.html --out-dir docs --public-url ./",
     "clear-build-cache": "rm -rf .cache/ dist/",
     "dev": "parcel src/index.html",
     "dev:mock": "cross-env PET_MOCK=mock parcel src/index.html",
