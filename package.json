@@ -30,7 +30,7 @@
   },
   "scripts": {
     "deploy": "npm run build && git add . && git commit -a -m 'latest build' && git push origin master",
-    "build": "parcel build --public-url ./dist/ src/index.html",
+    "build": "cross-env NODE_ENV=production parcel build src/index.html --out-dir docs --public-url /adopt-me/",
     "start": "npm -s run build && babel-node server/index.js",
     "clear-build-cache": "rm -rf .cache/ dist/",
     "dev": "parcel src/index.html",
